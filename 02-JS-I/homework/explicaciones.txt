@@ -1,0 +1,22 @@
+* Variables:
+Una variable es como un plato al que le puedes poner cualquier cosa: le puedes poner salchichas, tornillos, cotonetes, mantequilla, un gato, etc. Y a ese plato le puedes poner un nombre, por ejemplo sopaDeGato igualmente las variables almacenan datos en lugar de gatos, y a las variables se les puede nombrar de cualquier manera. 
+
+
+* Strings
+Vamos a imaginar que hay dos mundos: el mundo de los números y el mundo de los strings, en el mundo de los numeros solo viven números, y en el mundo de los strings solo viven letras, los strings cuando visitan al mundo de los numeros necesitan unas comillas como protección para poder respirar. 
+
+* Funciones (argumentos, `return`)
+Una funcion es como una licuadora que hace licuados, aguas frescas, salsas etc. Los argumentos son los ingredientes y el return es lo que vas a servir o lo que vas a hacer con esos ingredientes. 
+
+
+
+* Declaraciones `if`
+Las declaraciones if imaginate que vas en un trenesito y que hay dos caminos uno para el dia y otro para la noche, los ifs nos sirven para tomar una decision en el caso del trenecito nos iriamos en un camino o en otro dependiendo si es dia o si es de noche.
+
+
+
+* Valores booleanos (`true`, `false`)
+
+
+Imaginate que tienes un foco y que solamente puede estar apagado "false" o prendido "true"
+
