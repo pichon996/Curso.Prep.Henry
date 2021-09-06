@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array[0]
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.length -1]
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length 
 }
 
 
@@ -22,7 +25,16 @@ function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
-  // Tu código:
+  // Tu código: 
+  
+  let newArray = []
+  let resultado
+  for (i = 0; i < array.length; i++) {
+    resultado = array[i]+1
+    newArray.push(resultado)
+  } 
+  return newArray
+
 }
 
 
@@ -30,6 +42,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  //array[array.length] = elemento;
+  array.push(elemento)
+  return array;
+   
 }
 
 
@@ -38,6 +54,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+ array.unshift(elemento)
+ return array
 }
 
 
@@ -47,6 +65,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  //  let texto = ""
+
+  //  for(var i=0; i < palabras.length; i++){
+  //    texto = palabras[i] 
+  //  } return texto
+  return palabras.join(' ')
+
 }
 
 
@@ -54,6 +79,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  return array.includes(elemento)
 }
 
 
@@ -61,6 +87,12 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  //Usted esta aqui
+ 
+  let reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+  
+  return numeros.reduce(reducer)
 }
 
 
@@ -68,6 +100,10 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let reducer = (accumulator, currentValue) => accumulator + currentValue;
+  let numeroReducido = resultadosTest.reduce(reducer) 
+  let divisor = resultadosTest.length 
+  return numeroReducido / divisor 
 }
 
 
@@ -75,6 +111,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  
 }
 
 
